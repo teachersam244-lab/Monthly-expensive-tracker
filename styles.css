@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTJxb3ZqaG9rbmF4NnltNXQ4dGIzMm9xamlodjB6dXRhejd3ZmY4ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GC7C2Fi902BDG/giphy.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background: rgba(255,255,255,0.9);
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form input, .form select, .form button {
+    padding: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr.mercado { background-color: #7de3e6; }
+tr.servicios { background-color: #f6a6c1; }
+tr.extra { background-color: #fff3a0; }
+
+button {
+    cursor: pointer;
+}
+
+.totales {
+    margin-top: 25px;
+}
+.gif-lateral {
+    position: fixed; /* siempre visible aunque hagas scroll */
+    top:30%;          /* centrado vertical */
+    right:1250px;/* a 20px del borde derecho */
+    transform: translateY(-50%); /* para centrar vertical exacto */
+    width: 200px;     /* ajusta el tamaño */
+    z-index: 10;       /* delante del fondo pero detrás de modales si los hay */
+}
+
+.gif-lateral img {
+    width:100%;
+    display: block;
+}
+.gif-lateral img {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}

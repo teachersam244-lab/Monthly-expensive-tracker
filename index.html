@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Gastos Mensuales</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 Control de Gastos Mensuales</h1>
+    <div class="gif-lateral">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU3eHM3dzRyNXQ1OHV0dzRqYzhlbDNoNTJ4ZTFreXVoODhtanN5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dQjT5WlRh0QQxncTY9/giphy.gif" alt="GIF decorativo">
+</div>
+
+    <div class="form">
+        <input type="month" id="mes">
+
+        <input type="text" id="descripcion" placeholder="Descripción">
+        <input type="number" id="monto" placeholder="Monto (ej: 3000)">
+        <input type="number" id="cantidad" placeholder="Cantidad" value="1">
+
+        <select id="categoria">
+            <option value="mercado">Mercado</option>
+            <option value="servicios">Servicios</option>
+            <option value="extra">Gastos Extra</option>
+        </select>
+
+        <button id="btnAgregar">Agregar</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Monto</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="lista"></tbody>
+    </table>
+
+    <div class="totales">
+        <p>🛒 Total Mercado: <span id="totalMercado">$ 0</span></p>
+        <p>💡 Total Servicios: <span id="totalServicios">$ 0</span></p>
+        <p>🎉 Total Gastos Extra: <span id="totalExtra">$ 0</span></p>
+        <h2>Total General: <span id="totalGeneral">$ 0</span></h2>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
